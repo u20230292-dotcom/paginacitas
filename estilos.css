@@ -1,0 +1,152 @@
+/* Importar fuente amigable */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap');
+
+:root {
+    --color-principal: #ff9aa9; 
+    --color-secundario: #ef729c;
+    --blanco: #ffeeee;
+    --texto-oscuro: #5f0024;
+}
+
+body {
+    
+    font-family: 'Montserrat', sans-serif;
+    text-align:left;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+
+#titulo {
+    background-color: var(--color-principal);
+    color: var(--blanco);
+    padding: 5% 15%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#titulo h1 {
+    font-size: 6.5rem;
+    color:#740006
+    
+   
+
+}
+
+#titulo img {
+    width: 500px;
+    transform: rotate(25deg); 
+    margin-top: 50px;
+}
+
+
+button {
+    margin: 10px 5px;
+    padding: 12px 30px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+button[type="button"] {
+    border-radius: 15px;
+    background-color: #b15050;
+    color: rgb(255, 255, 255);
+}
+
+button[type="button"]:hover {
+    background-color: #d65e5e;
+    transform: scale(1.05);
+}
+
+#caracteristicas {
+    padding: 7% 15%;
+    background-color: var(--blanco);
+    position: relative;
+    z-index: 1;
+}
+
+#caracteristicas h3 {
+    color: var(--texto-oscuro);
+    margin-top: 20px;
+}
+
+#caracteristicas p {
+    color: #8d003b;
+}
+
+
+#testimonios {
+    background-color: var(--color-secundario);
+    color: var(--blanco);
+    padding: 7% 15%;
+}
+
+#testimonios img {
+    width: 15%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+
+#prensa {
+    background-color: var(--color-secundario);
+    padding-bottom: 3%;
+}
+
+#prensa img {
+    width: 15%;
+    margin: 20px 20px 50px;
+    filter: brightness(0) invert(1); /* Hace los logos blancos */
+}
+
+
+#precios {
+    padding: 100px;
+    flex-wrap: wrap;
+    color: #9c244c;
+
+
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    margin: 10px;
+}
+
+
+#cta {
+    background-color: var(--color-principal);
+    color: var(--blanco);
+    padding: 7% 15%;
+}
+
+#cta h3 {
+    font-size: 3rem;
+}
+
+
+#footer {
+    padding: 7% 15%;
+    background-color: var(--blanco);
+}
+
+
+@media (max-width: 1028px) {
+    #titulo {
+        text-align: center;
+    }
+    #titulo img {
+        position: static;
+        transform: rotate(0);
+        margin: 50px auto;
+    }
+}
